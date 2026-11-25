@@ -1,0 +1,17 @@
+{
+  "name": "who-goes-there",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /WhoGoesThere/ --out dist",
+    "preview": "bun run build && bunx vite preview --outDir dist --base /WhoGoesThere/ --port 4173 --open /WhoGoesThere/",
+    "export": "slidev export --with-clicks=false"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.1.0"
+  },
+  "devDependencies": {
+    "@slidev/types": "^53.1.0"
+  }
+}
